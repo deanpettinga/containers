@@ -20,7 +20,7 @@ IncludeCmd: yes
         kallisto=0.43.0 \
         subread=1.5.0.post3 \
 	trim-galore=0.5.0 \
-	snakemake=3.13.3 \
+	snakemake=5.4.4 \
 	bwa=0.7.12 \
 	bcftools=1.9 \
 	samblaster=0.1.24 
