@@ -1,6 +1,0 @@
-{
-    "dir": "/secondary/projects/bbc/research/test/"
-    "raw_data": "/secondary/projects/bbc/research/test/raw_data/",
-    "genome": "/primary/projects/bbc/references/mouse/indexes/mm10/star/star_p1idx/",
-    "trimmed_data": "/secondary/projects/bbc/research/test/trimmed_data/",
-}
