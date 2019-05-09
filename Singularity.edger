@@ -17,28 +17,28 @@ IncludeCmd: yes
       graphviz=2.40.1 \
       pyyaml=5.1 \
       docutils=0.14 \
-      dplyr=0.8.0.1 \
-      ggfortify=0.4.6 \
-      ggplot2=3.1.1 \
-      ggrepel=0.8.0 \
-      gplots=3.0.1.1 \
-      gridExtra=2.3 \
-      IRanges=2.18.0 \
-      kableExtra=1.1.0 \
-      matrixStats=0.54.0 \
+      r-dplyr=0.8.0.1 \
+      r-ggfortify=0.4.6 \
+      r-ggplot2=3.1.1 \
+      r-ggrepel=0.8.0 \
+      r-gplots=3.0.1.1 \
+      r-gridExtra=2.3 \
+      r-IRanges=2.18.0 \
+      r-kableExtra=1.1.0 \
+      r-matrixStats=0.54.0 \
       msigdbr=6.2.1 \
-      pheatmap=1.0.12 \
-      plyr=1.8.4 \
-      RColorBrewer=1.1 \
-      Rcpp=1.0.1 \
-      reshape=0.8.8 \
-      reshape2=1.4.3 \
-      S4Vectors=0.22.0 \
-      stringr=1.4.0 \
-      tibble=2.1.1 \
-      tidyr=0.8.3 \
-      UpSetR=1.3.3 \
-      xtable=1.8-4 \
+      r-pheatmap=1.0.12 \
+      r-plyr=1.8.4 \
+      r-rcolorbrewer=1.1 \
+      r-rcpp=1.0.1 \
+      r-reshape=0.8.8 \
+      r-reshape2=1.4.3 \
+      r-s4vectors=0.22.0 \
+      r-stringr=1.4.0 \
+      r-tibble=2.1.1 \
+      r-tidyr=0.8.3 \
+      r-UpSetR=1.3.3 \
+      r-xtable=1.8-4 \
       r-BiocManager=1.30.4 \
 
     # tools for R
@@ -46,13 +46,13 @@ IncludeCmd: yes
       bioconductor-biocinstaller \
       bioconductor-edger=3.26.0 \
       bioconductor-annotate=1.60.1 \
-      bioconductor-biomaRt=2.38.0 \
+      bioconductor-biomart=2.38.0 \
       bioconductor-fgsea \
       bioconductor-genomicranges=1.34.0 \
-      bioconductor-GO.db=3.7.0 \
+      bioconductor-go.db=3.7.0 \
       bioconductor-goseq=1.34.1 \
       bioconductor-limma=3.40.0 \
-      bioconductor-SummarizedExperiment=1.12.0 \
+      bioconductor-summarizedexperiment=1.12.0 \
 
 
 
