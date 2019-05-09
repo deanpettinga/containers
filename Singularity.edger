@@ -17,42 +17,44 @@ IncludeCmd: yes
       graphviz=2.40.1 \
       pyyaml=5.1 \
       docutils=0.14 \
-      r-dplyr=0.8.0.1 \
+      r-dplyr=0.7.6 \
       r-ggfortify=0.4.6 \
-      r-ggplot2=3.1.1 \
-      r-ggrepel=0.8.0 \
+      r-ggplot2=3.0.0 \
+      r-ggrepel=0.8.1 \
       r-gplots=3.0.1.1 \
       r-gridExtra=2.3 \
-      r-IRanges=2.18.0 \
+      
       r-kableExtra=1.1.0 \
       r-matrixStats=0.54.0 \
-      msigdbr=6.2.1 \
+      # msigdbr=6.2.1 \
       r-pheatmap=1.0.12 \
       r-plyr=1.8.4 \
-      r-rcolorbrewer=1.1 \
-      r-rcpp=1.0.1 \
-      r-reshape=0.8.8 \
+      r-rcolorbrewer=1.1_2 \
+      r-rcpp=0.12.18 \
+      r-reshape=1.4.3 \
       r-reshape2=1.4.3 \
-      r-s4vectors=0.22.0 \
-      r-stringr=1.4.0 \
-      r-tibble=2.1.1 \
-      r-tidyr=0.8.3 \
-      r-UpSetR=1.3.3 \
-      r-xtable=1.8-4 \
+
+      r-stringr=1.3.1 \
+      r-tibble=1.4.2 \
+      r-tidyr=0.8.1 \
+      r-upsetr=1.3.3 \
+      r-xtable=1.8_24 \
       r-BiocManager=1.30.4 \
 
     # tools for R
     conda install --yes -c bioconda \
-      bioconductor-biocinstaller \
+      bioconductor-biocinstaller=1.32.1 \
       bioconductor-edger=3.26.0 \
       bioconductor-annotate=1.60.1 \
       bioconductor-biomart=2.38.0 \
-      bioconductor-fgsea \
+      bioconductor-fgsea=1.8.0 \
       bioconductor-genomicranges=1.34.0 \
       bioconductor-go.db=3.7.0 \
       bioconductor-goseq=1.34.1 \
+      bioconductor-IRanges=2.16.0 \
       bioconductor-limma=3.40.0 \
       bioconductor-summarizedexperiment=1.12.0 \
+      bioconductor-s4vectors=0.20.1 
 
 
 
