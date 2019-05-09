@@ -24,7 +24,6 @@ IncludeCmd: yes
       bioconductor-goseq=1.34.1 \
       bioconductor-limma=3.40.0 \
       bioconductor-SummarizedExperiment=1.12.0 \
-      bioconductor-sva=3.30.0 \
 
 
     conda config --add channels conda-forge
