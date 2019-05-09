@@ -26,7 +26,6 @@ IncludeCmd: yes
       r-gridExtra=2.3 \
       r-kableExtra=1.1.0 \
       r-matrixStats=0.54.0 \
-      # msigdbr=6.2.1 \
       r-pheatmap=1.0.12 \
       r-plyr=1.8.4 \
       r-rcolorbrewer=1.1_2 \
@@ -39,7 +38,8 @@ IncludeCmd: yes
       r-upsetr=1.3.3 \
       r-xtable=1.8_24 \
       r-BiocManager=1.30.4 \
-
+      # msigdbr=6.2.1 \
+      
     # bioconductor tools
     conda install --yes -c bioconda \
       bioconductor-biocinstaller=1.32.1 \
