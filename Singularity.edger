@@ -12,6 +12,7 @@ IncludeCmd: yes
     conda config --add channels bioconda
     conda config --add channels conda-forge
     
+    # conda-forge tools
     conda install --yes -c conda-forge \
       r-base=3.5.1
       graphviz=2.40.1 \
@@ -23,7 +24,6 @@ IncludeCmd: yes
       r-ggrepel=0.8.1 \
       r-gplots=3.0.1.1 \
       r-gridExtra=2.3 \
-      
       r-kableExtra=1.1.0 \
       r-matrixStats=0.54.0 \
       # msigdbr=6.2.1 \
@@ -33,7 +33,6 @@ IncludeCmd: yes
       r-rcpp=0.12.18 \
       r-reshape=1.4.3 \
       r-reshape2=1.4.3 \
-
       r-stringr=1.3.1 \
       r-tibble=1.4.2 \
       r-tidyr=0.8.1 \
@@ -41,7 +40,7 @@ IncludeCmd: yes
       r-xtable=1.8_24 \
       r-BiocManager=1.30.4 \
 
-    # tools for R
+    # bioconductor tools
     conda install --yes -c bioconda \
       bioconductor-biocinstaller=1.32.1 \
       bioconductor-edger=3.26.0 \
