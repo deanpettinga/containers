@@ -1,0 +1,107 @@
+BootStrap: docker
+From: continuumio/miniconda3:latest
+IncludeCmd: yes
+
+%post
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# this will install all necessary packages and prepare the container
+    apt-get -y update
+    apt-get -y install make gcc zlib1g-dev libncurses5-dev
+    export PATH=/opt/conda/bin:$PATH
+
+    conda config --add channels bioconda
+
+    # tools for R
+    conda install --yes -c bioconda \
+      bioconductor-biocinstaller \
+      bioconductor-edger=3.26.0 \
+      bioconductor-annotate=1.60.1 \
+      bioconductor-biomaRt=2.38.0 \
+      bioconductor-BiocParallel=1.18.0 \
+      bioconductor-fgsea=1.8.0 \
+      bioconductor-genomicranges=1.34.0 \
+      bioconductor-GO.db=3.7.0 \
+      bioconductor-goseq=1.34.1 \
+      bioconductor-limma=3.40.0 \
+      bioconductor-SummarizedExperiment=1.12.0 \
+      bioconductor-sva=3.30.0 \
+
+
+    conda config --add channels conda-forge
+    conda install --yes -c conda-forge \
+      graphviz=2.40.1 \
+      pyyaml=5.1 \
+      docutils=0.14 \
+      dplyr=0.8.0.1 \
+      ggfortify=0.4.6 \
+      ggplot2=3.1.1 \
+      ggrepel=0.8.0 \
+      gplots=3.0.1.1 \
+      gridExtra=2.3 \
+      IRanges=2.18.0 \
+      kableExtra=1.1.0 \
+      matrixStats=0.54.0 \
+      msigdbr=6.2.1 \
+      pheatmap=1.0.12 \
+      plyr=1.8.4 \
+      RColorBrewer=1.1 \
+      Rcpp=1.0.1 \
+      reshape=0.8.8 \
+      reshape2=1.4.3 \
+      S4Vectors=0.22.0 \
+      stringr=1.4.0 \
+      tibble=2.1.1 \
+      tidyr=0.8.3 \
+      UpSetR=1.3.3 \
+      xtable=1.8-4 \
+      r-BiocManager=1.30.4 \
+
+
+    conda clean --index-cache --tarballs --packages --yes
+    mkdir /gpfs /spin1 /gs2 /gs3 /gs4 /gs5 /gs6 /data /scratch /fdb /lscratch
+
+cat > /singularity <<'EORUNSCRIPT'
+#!/bin/bash
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# this text will get copied to /singularity and will run whenever the container
+# is called as an executable
+function usage() {
+    cat <<EOF
+
+NAME
+edger - edgeR analysis tools 0.1
+
+SYNOPSIS
+rnaseq tool [tool options]
+rnaseq list
+rnaseq help
+
+DESCRIPTION
+Singularity container with tools to build rnaseq pipeline.
+
+EOF
+}
+
+function tools() {
+    echo "conda: $(which conda)"
+    echo "---------------------------------------------------------------"
+    conda list
+    echo "---------------------------------------------------------------"
+    echo "samtools: $(samtools --version | head -n1)"
+}
+
+export PATH="/opt/conda/bin:/usr/local/bin:/usr/bin:/bin:"
+unset CONDA_DEFAULT_ENV
+export ANACONDA_HOME=/opt/conda
+
+arg="${1:-none}"
+
+case "$arg" in
+    none) usage; exit 1;;
+    help) usage; exit 0;;
+    list) tools; exit 0;;
+    # just try to execute it then
+    *)    $@;;
+esac
+EORUNSCRIPT
+chmod 755 /singularity
