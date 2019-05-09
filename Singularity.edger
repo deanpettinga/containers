@@ -30,13 +30,13 @@ IncludeCmd: yes
       r-plyr=1.8.4 \
       r-rcolorbrewer=1.1_2 \
       r-rcpp=0.12.18 \
-      r-reshape=1.4.3 \
+      r-reshape=0.8.8 \
       r-reshape2=1.4.3 \
       r-stringr=1.3.1 \
       r-tibble=1.4.2 \
       r-tidyr=0.8.1 \
       r-upsetr=1.3.3 \
-      r-xtable=1.8_24 \
+      r-xtable=1.8_3 \
       r-BiocManager=1.30.4 \
       # msigdbr=6.2.1 \
       
