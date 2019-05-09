@@ -15,18 +15,16 @@ IncludeCmd: yes
     conda install --yes -c bioconda \
       bioconductor-biocinstaller \
       bioconductor-edger=3.26.0 \
-      bioconductor-annotate=1.62.0 \
-      bioconductor-BiocManager=1.30.4 \
+      bioconductor-annotate=1.60.1 \
+      bioconductor-biomaRt=2.38.0 \
       bioconductor-BiocParallel=1.18.0 \
-      bioconductor-biomaRt=2.40.0 \
-      bioconductor-BiocParallel=1.18.0 \
-      bioconductor-fgsea=1.10.0 \
-      bioconductor-genomicranges=1.36.0 \
-      bioconductor-GO.db=3.8.2 \
-      bioconductor-goseq=1.36.0 \
+      bioconductor-fgsea=1.8.0 \
+      bioconductor-genomicranges=1.34.0 \
+      bioconductor-GO.db=3.7.0 \
+      bioconductor-goseq=1.34.1 \
       bioconductor-limma=3.40.0 \
-      bioconductor-SummarizedExperiment=1.14.0 \
-      bioconductor-sva=3.32.0 \
+      bioconductor-SummarizedExperiment=1.12.0 \
+      bioconductor-sva=3.30.0 \
 
 
     conda config --add channels conda-forge
@@ -56,7 +54,7 @@ IncludeCmd: yes
       tidyr=0.8.3 \
       UpSetR=1.3.3 \
       xtable=1.8-4 \
-
+      r-BiocManager=1.30.4 \
 
 
     conda clean --index-cache --tarballs --packages --yes
