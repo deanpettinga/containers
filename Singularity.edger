@@ -14,7 +14,7 @@ IncludeCmd: yes
     
     # conda-forge tools
     conda install --yes -c conda-forge \
-      r-base=3.5.1
+      r-base=3.5.1 \
       graphviz=2.40.1 \
       pyyaml=5.1 \
       docutils=0.14 \
