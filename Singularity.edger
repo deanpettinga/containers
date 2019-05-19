@@ -38,6 +38,7 @@ IncludeCmd: yes
       r-upsetr=1.3.3 \
       r-xtable=1.8_3 \
       r-BiocManager=1.30.4 \
+      r-devtoools=v2.0.2 \
       # msigdbr=6.2.1 \
       
     # bioconductor tools
