@@ -59,7 +59,7 @@ IncludeCmd: yes
       bioconductor-limma=3.40.0 \
       bioconductor-summarizedexperiment=1.12.0 \
       bioconductor-s4vectors=0.20.1 \
-      bioconductor-sva=3.30.1 \
+
 
     conda clean --index-cache --tarballs --packages --yes
     mkdir /gpfs /spin1 /gs2 /gs3 /gs4 /gs5 /gs6 /data /scratch /fdb /lscratch
