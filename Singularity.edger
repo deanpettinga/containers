@@ -39,7 +39,7 @@ IncludeCmd: yes
       r-xtable=1.8_3 \
       r-BiocManager=1.30.4 \
       r-devtools=2.0.2 \
-      r-data.table=1.11.4
+      r-data.table=1.11.4 \
       r-msigdbr=6.2.1 \
       r-ggalt=0.4.0 \
       r-readxl=1.3.1 \
