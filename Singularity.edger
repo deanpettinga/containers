@@ -44,6 +44,8 @@ IncludeCmd: yes
       r-ggalt=0.4.0 \
       r-readxl=1.3.1 \
       r-statmod=1.4.30 \
+      r-matrixstats=0.54.0 \
+      r-codetools=0.2_16
       
     # bioconductor tools
     conda install --yes -c bioconda \
