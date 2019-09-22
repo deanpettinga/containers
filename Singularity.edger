@@ -1,10 +1,10 @@
- workBootStrap: docker
+BootStrap: docker
 From: rocker/verse:3.6.0
 IncludeCmd: yes
 
 %post
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# install R packages
+# this will install all necessary R packages and prepare the container
 
   # R -e 'install.packages("cowplot", repos="http://cran.us.r-project.org")'
   # R -e 'install.packages("ggfortify", repos="http://cran.us.r-project.org")'
