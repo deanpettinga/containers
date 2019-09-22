@@ -17,10 +17,10 @@ IncludeCmd: yes
   R -e 'install.packages("vegan", repos="http://cran.us.r-project.org")'
   #
   # # Bioconductor packages
-  # R -e 'BiocManager::install("biomaRt", version="3.9")'
-  # R -e 'BiocManager::install("clusterProfiler", version="3.9")'
-  # R -e 'BiocManager::install("edgeR", version="3.9")'
-  # R -e 'BiocManager::install("AnnotationDbi", version="3.9")'
+	R -e 'BiocManager::install("biomaRt", version="3.9")'
+  R -e 'BiocManager::install("clusterProfiler", version="3.9")'
+  R -e 'BiocManager::install("edgeR", version="3.9")'
+	R -e 'BiocManager::install("AnnotationDbi", version="3.9")'
   # # Annotation Packages
   # R -e 'BiocManager::install("org.Ag.eg.db", version="3.9")'
   # R -e 'BiocManager::install("org.At.tair.db", version="3.9")'
@@ -51,7 +51,7 @@ function usage() {
     cat <<EOF
 
 NAME
-edger - edgeR analysis tools 0.1
+
 
 SYNOPSIS
 rnaseq tool [tool options]
