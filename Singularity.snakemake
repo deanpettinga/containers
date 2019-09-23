@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Dean Pettinga <dean.pettinga@vai.org>
+BootStrap: docker
+From: continuumio/miniconda3
+
+%runscript
+echo "This is what happens when you run the container..."
+export PATH=/opt/conda/bin:${PATH}
+/bin/bash
+
+%post
+export PATH=/opt/conda/bin:${PATH}
+echo "Hello from inside the container"
+conda update -y conda
+conda update --all
+conda install -c bioconda -c conda-forge snakemake -y
+conda list > /conda.txt
+touch /`date -u -Iseconds`
